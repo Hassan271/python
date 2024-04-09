@@ -1,0 +1,4 @@
+mypy
+numpy
+pandas
+jupter
