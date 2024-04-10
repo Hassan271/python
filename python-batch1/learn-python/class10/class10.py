@@ -1,9 +1,29 @@
 
-nums = [10,11,30,13,50,19,70,80]
-def multi(item):
-    return item 
-newList = list(filter(multi, nums))
-print(newList)
+
+# For Loop ==============================================
+
+# nums=[1,2,3,4,5,6,7,8,9,10]
+# for item in nums:
+#     print("print Numbers: ", item)
+
+
+# for j in range(0,20,4):
+#     print("for Loop Range: ", j)
+
+
+# Alphabet=["a","b","c","d","e"]
+# for k in Alphabet:
+#     if k == "d":
+#         print("print Alphabet: ", k[i])
+#         break
+    
+
+
+# nums = [10,11,30,13,50,19,70,80]
+# def multi(item):
+#     return item 
+# newList = list(filter(multi, nums))
+# print(newList)
 
 
 # def multi(item):
@@ -14,6 +34,7 @@ print(newList)
 # newList = list(map(multi, nums))
 # print(newList)
 
+
 # userNames = ["Naveed", "john", "Alice", "Ali", "Umar", "Umair"]
 # def changeUserNames(item):
 #     print(item)
@@ -21,6 +42,7 @@ print(newList)
 # newNames = list(map(changeUserNames,userNames))
 
 # print(newNames)  
+
 
 # for index, item in  enumerate(userNames):
 #     print("loop runing", item, index)
