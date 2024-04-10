@@ -4,9 +4,13 @@ student2 = "Umar"
 student3 = "ali"
 listOfNumbers = [10,20,30]
 studentNames = ["zain","umar", "ali", "usman", "umar", "umair"]
-studentNames[1] = "new name"
-output = studentNames[0:-3]
-print( "output", output )
+# studentNames[1] = "new name"
+# print(listOfNumbers)
+output = studentNames.count("zain")
+print(studentNames)
+print(output)
+# output = studentNames[0:-3]
+# print( "output", output )
 # nestedStudent= ["zain","ali", ["usman","Naveed"]]
 # 
 # output = ['Hi!'] * 4
