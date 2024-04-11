@@ -4,16 +4,19 @@
 # print(nums)
 
 
-# =============================
-# studentEmails = ["test@test.com", "test2@test.com", "test@test.com"]
-# newEmail = "test@test.com"
+# =========================================================
+# if an Email exist in database so it alert Email already exist 
 
-# "n" in ["naveed"]
-# "n" not in "naveed"
+studentEmails = ["test@test.com", "test2@test.com", "test3@test.com"]
+newEmail = "test1@test.com"
 
-# if newEmail not in studentEmails:
-#     studentEmails.append("test2@test.com")
-# ========================
+"n" in ["naveed"]
+"n" not in "naveed"
+
+if newEmail not in studentEmails:
+    studentEmails.append(newEmail)
+print(studentEmails)
+# =========================================================
 # studentEmailsSet  = {"test1@test.com", "test2@test.com", "test3@test.com", "test1@test.com"}
 # studentEmailsSet.add("test1@test.com")
 # studentEmailsSet.remove("test2@test.com")
@@ -38,8 +41,8 @@
 # print(tuple3)
 
 # It is also possible to use the tuple() constructor to make a tuple.
-tuple4 = tuple(("one", "Two", "Three","Four","Five"))
-print(tuple4)
+# tuple4 = tuple(("one", "Two", "Three","Four","Five"))
+# print(tuple4)
 
 
 
