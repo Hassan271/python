@@ -1,3 +1,6 @@
+
+# Dictionary is Kay:value  ==========================================
+
 car = "red 2342 324 honda 4"
 
 car = ["red" , 23432, 24, 4, "honda", "civic"]
