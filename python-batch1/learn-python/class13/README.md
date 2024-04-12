@@ -1,4 +1,4 @@
-# Class Topics
+# Class Topics and Notes 
 list of some commonly used string methods in Python:
 
 Basic Operations:
