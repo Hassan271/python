@@ -2,7 +2,28 @@
 
 
 - **Inheritance:** Inheritance allows a class (subclass) to inherit attributes and methods from another class (superclass). It promotes code reusability and establishes a hierarchy among classes.
-  
+
+
+ #
+class Car:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+        self.__speed = 0  # Encapsulation: speed is a private attribute
+
+    def accelerate(self, increment):
+        self.__speed += increment
+
+    def get_speed(self):
+        return self.__speed
+
+my_car = Car("Toyota", "Camry")
+my_car.accelerate(20)
+print(my_car.get_speed())  # Output: 20
+
+#==============================
+
+
 ```
 class Animal:
     def sound(self):
