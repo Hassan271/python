@@ -16,19 +16,26 @@
 # print(car1)  # Output: 20
 
 
+# below has 3- properties = and 1-function = drive()
+
 class Car:
-    def __init__(self, brand, price):
+    def __init__(self, brand, model, price):
         self.brand = brand
-        self.model = price
-        self.price =  4500000
+        self.model = model
+        self.price =  price
      
     def drive(self, driver):
         mybrand = self.brand
 
         return driver + "Start driving" + mybrand
 
-car1 = Car("Honda", 4500000)
-print(car1.brand)  # Output: Honda
+car1 = Car("Honda", "City14", 4500000)
+car2 = Car("Toyota", "GLi15", 5100000)
+
+Output=car1.drive("Hassan")
+print(car1.brand, car1.model, car1.price )  # Output: Honda City14 4500000
+print(car2.brand, car2.model, car2.price )  # Output: Toyota GLi15 5100000
+
 
 # # ========================================
 
