@@ -29,3 +29,18 @@ print(type(result))
 
 
 #print("textData",id("textData") )
+
+
+# List
+a = list(("A", "B", "C","D","E"))
+
+#display x:
+print(a)
+
+#display the data type of x:
+print(type(a)) 
+
+# 
+b = tuple(("A", "B", "C","D","E"))
+print(b)
+print(type(b))
