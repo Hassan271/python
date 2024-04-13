@@ -40,7 +40,27 @@ print(a)
 #display the data type of x:
 print(type(a)) 
 
-# 
+# Tuple
 b = tuple(("A", "B", "C","D","E"))
 print(b)
 print(type(b))
+
+#
+r=range(9)
+print(r)
+print(type(r))
+
+# range(0, 9)
+# <class 'range'>
+
+# 
+d = dict(a="A", b="B", c="C",d="D",e="E")
+print(d)
+print("Type is: ",type(d))
+
+
+
+
+
+
+
