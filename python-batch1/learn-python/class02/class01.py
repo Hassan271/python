@@ -59,6 +59,18 @@ print(d)
 print("Type is: ",type(d))
 
 
+s = set(("A", "B", "C","D","E"))
+print(s)
+print("Type is: ",type(s))
+
+
+# # Memory Review 
+# m = memoryview(bytes(10))
+# print(m)
+# print(type(m)) 
+ 
+# # <memory at 0x000002A7BB174F40>
+# # <class 'memoryview'>
 
 
 
