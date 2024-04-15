@@ -1,0 +1,100 @@
+
+# ->                    0        1         2
+names : list[str] = ["Qasim","Sir Zia", "Sir Inam"]
+# <-                    -3     -2          -1
+
+print(names[-2])
+
+# input List of num and create a new List  ==============================================================
+
+i = 0
+inputList = [10,20,19, 18,30,40,50,255, 333]
+evenSum = 0
+oddSum = 0
+print("before while")
+while i < len(inputList):
+    if inputList[i] % 2 == 0:
+        evenSum = evenSum + inputList[i]
+    else:
+        oddSum = oddSum + inputList[i]
+    i += 1
+print("even",evenSum, "odd", oddSum )
+
+# ==============================================================
+
+# i=1
+# print("before while Loop")
+# while i<6:
+#     print("Print Hello World!")
+#     i+=1
+#     print("After While Loop")
+    
+# ==============================================================
+    
+# i=1
+# print("before while Loop")
+# while i<11:
+#     print("Print", i)
+#     i+=1
+#     print("After While Loop")
+    
+#     i=11
+# print("before while Loop")
+# while i>1:
+#     print("Print", i)
+#     i-=1
+#     print("After While Loop")
+
+# Table ==============================================================
+
+# num = int( input("Enter table Number : "))
+# i=1
+# print("before Loop")
+# while i< 11:
+#     print(num, "*", i, "=", num*i)
+#     i+=1
+#     print("After Loop")
+
+
+
+student1 = "zain"
+student2 = "Umar"
+student3 = "ali"
+listOfNumbers = [10,20,30]
+studentNames = ["zain","umar", "ali", "usman", "umar", "umair"]
+studentNames[1] = "new name"
+output = studentNames[0:-3]
+print( "output", output )
+# nestedStudent= ["zain","ali", ["usman","Naveed"]]
+# 
+# output = ['Hi!'] * 4
+# output = student1 in studentNames
+# output = studentNames + listOfNumbers
+# studentNames.append("Naveed")
+# output = len(studentNames)
+# output = studentNames.clear()
+# output = studentNames.reverse()
+# output = studentNames.sort()
+# output = studentNames.count("Zain")
+# output = studentNames.index("usman")
+# output = studentNames.remove("umar")
+# output = studentNames.insert(6,"Naveed")
+
+# result = studentNames.append("Naveed Sarwar")
+# output = studentNames.pop()
+# output1 = studentNames.extend(listOfNumbers)
+
+# print(studentNames)
+
+# Function ==============================================
+# print("before Add function")
+# def Add(num1,num2, num3 = 25, a=4):
+#    print("a ->", num1, "b ->", num2)
+#    result =  num1 + num2 + num3 + a
+#    print(result)
+# Add(10,20,5)
+# print("After Add function")
+# Add(50,100,6,10)
+# Add(100,200,7,10)
+
+#  ==============================================

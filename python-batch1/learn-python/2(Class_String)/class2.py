@@ -1,3 +1,5 @@
+name : str = "Muhammad Qasim"
+print(name)
 num = 10
 qoute = "Naveed's says something about"
 qout2 = 'Naveeds says "something" about'
