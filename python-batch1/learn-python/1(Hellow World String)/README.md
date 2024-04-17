@@ -21,13 +21,15 @@
 
 - **Snake case** − Use single underscore (_) character to separate words. For example: km_per_hour, price_per_litre
 
+<!-- =================================================== -->
+
 # Project Setup Guide
 
 This guide explains how to set up the development environment using Anaconda, Visual Studio Code (VS Code), and Python.
 
 ## Important Note: We are Moving To Poetry from Anaconda
 
-[Watch this Poetry Video](https://www.youtube.com/watch?v=g9u-H628jXg&t=16s)
+[Class 1 Poetry Video](https://www.youtube.com/watch?v=g9u-H628jXg&t=16s)
 
 # Create Project and Manage Dependencies with Poetry
 
@@ -39,7 +41,71 @@ Follow the txt file in this directory.
 
 [Python Poetry Cheatsheet](https://gist.github.com/CarlosDomingues/b88df15749af23a463148bd2c2b9b3fb)
 
+<!-- --------------------------------------------------------------------- -->
 [Poetry Windows Installation](https://gist.github.com/Isfhan/b8b104c8095d8475eb377230300de9b0)
+
+Step-By-Step guide to installing Poetry on Windows:
+
+1- Open Windows Powershell: Navigate to your Start menu, type "Powershell", and select "Windows Powershell" from the search results.
+
+2- Run Installation Command: In the Powershell window, paste the following command and press Enter:
+
+Note: If you've installed Python through the Microsoft Store, replace py with python in the command below.
+cmd >> 
+(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py -
+(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python - 
+
+3- Wait for Installation to Complete: The installation process may take some time depending on your internet connection speed. Let it run until completion.
+
+4- Copy Installation Path: Once the installation is complete, it will provide you with a path. Copy this path as you'll need to add it to your user environment variables.
+To get started you need Poetry's bin directory (C:\Users\Administrator\AppData\Roaming\Python\Scripts) in your `PATH`
+environment variable.
+
+open in explorer 
+C:\Users\Administrator\AppData\Roaming\Python\Scripts
+
+5- Add Path to Environment Variables:
+
+Right-click on the Start button and select "System".
+In the System window, click on "Advanced system settings" on the left sidebar.
+In the System Properties window, click on the "Environment Variables..." button.
+In the Environment Variables window, under "User variables for [YourUsername]", find the "Path" variable and select it.
+Click on the "Edit..." button.
+In the Edit Environment Variable window, click on "New" and paste the path you copied from the installation process.
+Click "OK" on all open windows to save your changes.
+
+poetry --version
+
+6- Close and Reopen Powershell: Close the Powershell window and open a new one.
+
+7- Verify Installation: In the new Powershell window, type poetry --version and press Enter. If Poetry has been successfully installed, you should see its version number printed in the terminal.
+
+You have now successfully installed Poetry on your Windows system. You can start using it for managing your Python projects.
+<!-- --------------------------------------------------------------------- -->
+
+[Poetry Commands](https://realpython.com/dependency-management-python-poetry/#command-reference)
+
+poetry new project_poetry1
+cd project_poetry1                      # virtual Env Created 
+poetry run python --version             
+
+open
+C:\Users\Administrator\project_poetry1
+
+poetry env list
+
+poetry add requests 
+
+poetry run python project_poetry1\main.py
+output = Hello world Return
+
+poetry add pytest
+poetry run pytest 
+ 
+poetry build
+poetry publish 
+
+<!-- ------------------------------ -->
 
 [Poetry vs. Pip: Modern Python Dependency Management Unveiled](https://python.plainenglish.io/poetry-vs-pip-modern-python-dependency-management-unveiled-15d39e059d39)
 
@@ -61,7 +127,7 @@ Note: If you have a old version of Poetry Installed Upgrade it:
 
 [Poetry Commands](https://realpython.com/dependency-management-python-poetry/#command-reference)
 
-    poetry run python --version
+poetry run python --version
 
 # Poetry for Microservice
 
