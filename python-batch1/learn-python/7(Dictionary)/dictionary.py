@@ -34,12 +34,12 @@
 
 # ==========================================================
 car =	{
-  "Company": "Honda",
-  "Model": "city",
-  "Number": "TN-4599",
-  "Year": 2014
+  "company": "Honda",
+  "model": "city",
+  "number": "TN-4599",
+  "year": 2014
 }
-print(car["Company"])          # Access items in Dictionary 
+print(car["company"])          # Access items in Dictionary 
 
 x = car.get("year")          # get() Value  
 print("get year from dictionary = ",x)                            
@@ -53,6 +53,7 @@ print("values are = " ,v)
 item = car.items()            # values() of dictionary  
 print("items are = " ,item)                            
 
+
 car["color"] = "white"
 print("Add Color white in Dictionary ",car)
 
@@ -60,7 +61,52 @@ print("Add Color white in Dictionary ",car)
 if "Model" in car:
   print("Yes, 'model' is one of the keys in the car dictionary")
 
+car["year"] = 2018
+print("year has been changed from 2014 to = " ,car)
+
+car.update({"year": 2020})
+print("again year has been changed from 2018 to = " ,car)
+
+# del car["color"]
+car.pop("color")
+print("color has been changed Removed from Dictionary = " ,car)
+
+# car.clear()
+# print("clear the Dictionary = " ,car)
+
+for a in car:
+    print("Loop is = ",a)
+
+carCopy = car.copy()
+print(carCopy)
 
 
+# Access Nested ============================================
+child1 = {
+  "name" : "Emil",
+  "year" : 2004
+}
+child2 = {
+  "name" : "Tobias",
+  "year" : 2007
+}
+child3 = {
+  "name" : "Linus",
+  "year" : 2011
+}
 
+myfamily = {
+  "child1" : child1,
+  "child2" : child2,
+  "child3" : child3
+}
 
+print(myfamily)
+
+# Loop Through Nested Dictionaries-----------------------------
+
+for x, obj in myfamily.items():
+    print(x)
+    
+    for y in obj:
+        print(y + ':', obj[y])
