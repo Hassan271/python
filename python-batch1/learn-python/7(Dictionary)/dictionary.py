@@ -32,81 +32,107 @@
 # print(len(dictionary1))         # Length 
 # print(type(dictionary1))        # Data Type 
 
-# ==========================================================
-car =	{
-  "company": "Honda",
-  "model": "city",
-  "number": "TN-4599",
-  "year": 2014
-}
-print(car["company"])          # Access items in Dictionary 
+# # ==========================================================
+# car =	{
+#   "company": "Honda",
+#   "model": "city",
+#   "number": "TN-4599",
+#   "year": 2014
+# }
+# print(car["company"])          # Access items in Dictionary 
 
-x = car.get("year")          # get() Value  
-print("get year from dictionary = ",x)                            
+# x = car.get("year")          # get() Value  
+# print("get year from dictionary = ",x)                            
 
-y = car.keys()              # keys() of dictionary  
-print("Keys are = " ,y)                            
+# y = car.keys()              # keys() of dictionary  
+# print("Keys are = " ,y)                            
 
-v = car.values()            # values() of dictionary  
-print("values are = " ,v)                            
+# v = car.values()            # values() of dictionary  
+# print("values are = " ,v)                            
 
-item = car.items()            # values() of dictionary  
-print("items are = " ,item)                            
-
-
-car["color"] = "white"
-print("Add Color white in Dictionary ",car)
+# item = car.items()            # values() of dictionary  
+# print("items are = " ,item)                            
 
 
-if "Model" in car:
-  print("Yes, 'model' is one of the keys in the car dictionary")
-
-car["year"] = 2018
-print("year has been changed from 2014 to = " ,car)
-
-car.update({"year": 2020})
-print("again year has been changed from 2018 to = " ,car)
-
-# del car["color"]
-car.pop("color")
-print("color has been changed Removed from Dictionary = " ,car)
-
-# car.clear()
-# print("clear the Dictionary = " ,car)
-
-for a in car:
-    print("Loop is = ",a)
-
-carCopy = car.copy()
-print(carCopy)
+# car["color"] = "white"
+# print("Add Color white in Dictionary ",car)
 
 
-# Access Nested ============================================
-child1 = {
-  "name" : "Emil",
-  "year" : 2004
-}
-child2 = {
-  "name" : "Tobias",
-  "year" : 2007
-}
-child3 = {
-  "name" : "Linus",
-  "year" : 2011
-}
+# if "Model" in car:
+#   print("Yes, 'model' is one of the keys in the car dictionary")
 
-myfamily = {
-  "child1" : child1,
-  "child2" : child2,
-  "child3" : child3
-}
+# car["year"] = 2018
+# print("year has been changed from 2014 to = " ,car)
 
-print(myfamily)
+# car.update({"year": 2020})
+# print("again year has been changed from 2018 to = " ,car)
 
-# Loop Through Nested Dictionaries-----------------------------
+# # del car["color"]
+# car.pop("color")
+# print("color has been changed Removed from Dictionary = " ,car)
 
-for x, obj in myfamily.items():
-    print(x)
+# # car.clear()
+# # print("clear the Dictionary = " ,car)
+
+# for a in car:
+#     print("Loop is = ",a)
+
+# carCopy = car.copy()
+# print(carCopy)
+
+
+# # Access Nested ============================================
+# child1 = {
+#   "name" : "Emil",
+#   "year" : 2004
+# }
+# child2 = {
+#   "name" : "Tobias",
+#   "year" : 2007
+# }
+# child3 = {
+#   "name" : "Linus",
+#   "year" : 2011
+# }
+
+# myfamily = {
+#   "child1" : child1,
+#   "child2" : child2,
+#   "child3" : child3
+# }
+
+# print(myfamily)
+
+# # Loop Through Nested Dictionaries-----------------------------
+
+# for x, obj in myfamily.items():
+#     print(x)
     
-    for y in obj:
-        print(y + ':', obj[y])
+#     for y in obj:
+#         print(y + ':', obj[y])
+        
+        
+        
+# # class 8 -----------------------------
+# from flask import Flask
+# from flask import jsonify
+
+# app = Flask(__name__)
+
+
+# @app.route('/')
+# def hello():
+#     d = {'left': 0.17037454, 'right': 0.82339555, '_unknown_': 0.0059609693}
+#     message = {
+#         'status': 200,
+#         'message': 'OK',
+#         'scores': d
+#     }
+#     resp = jsonify(message)
+#     print(type(resp))
+#     resp.status_code = 200
+#     print(resp)
+#     return resp
+
+# if __name__ == '__main__':
+#     app.run()
