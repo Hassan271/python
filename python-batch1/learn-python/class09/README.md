@@ -1,3 +1,0 @@
-# Class Topics
-
-## Python - loops

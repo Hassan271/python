@@ -48,3 +48,17 @@ print("even",evenSum, "odd", oddSum )
 #     print(num, "*", i, "=", num*i)
 #     i+=1
 #     print("After Loop")
+
+#  ==============================================================
+
+# import sys
+
+# print("line1")
+# print("line2")
+
+# print(type(sys.argv)) 
+
+# if sys.argv[1] == '-g':
+#     print("I will install this package on globally in your system!")
+
+# print(sys.argv) # iterative data type list[str] 0=filename **value user define
