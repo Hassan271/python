@@ -1,4 +1,4 @@
-# Python Error Handling and File Handling Guide
+# Python Error Handling and File Handling Guide=================================
 
 This guide provides an overview of error handling techniques in Python, including creating custom errors and dynamic error handling. It also covers file handling with various access modifiers and reading files of different types such as CSV, PDF, Excel, and audio files.
 
