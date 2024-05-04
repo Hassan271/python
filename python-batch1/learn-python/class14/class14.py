@@ -13,14 +13,9 @@ print ("Current directory", getFiles)
 # print(math.factorial(3))
 
 
-
-
-
 # sand = "(WRkljasdfnmaernanmcoijjwe2903@#*(@!@($!^$!_ar234824090324)@$"
 # unique_id = sand[random.randint(0, len(sand))]+ str(int(random.random()*2344237482374982)) + sand[random.randint(0, len(sand))] + str(round(time.time())) + sand[random.randint(0, len(sand))]
 # print(unique_id)
-
-
 
 
 
